@@ -176,6 +176,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8BF160C2956331C00174616 /* Build configuration list for PBXNativeTarget "MeditoTV" */;
 			buildPhases = (
+				B8BF161D29563A6200174616 /* Swiftformat */,
+				B8BF161E29563ABE00174616 /* Swiftlint */,
 				B8BF15E42956331A00174616 /* Sources */,
 				B8BF15E52956331A00174616 /* Frameworks */,
 				B8BF15E62956331A00174616 /* Resources */,
@@ -299,6 +301,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8BF161D29563A6200174616 /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/opt/homebrew/bin/:$PATH\n\nif which swiftformat >/dev/null; then\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		B8BF161E29563ABE00174616 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/opt/homebrew/bin/:$PATH\n\nif which swiftlint >/dev/null; then\n    swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8BF15E42956331A00174616 /* Sources */ = {

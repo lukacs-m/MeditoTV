@@ -8,7 +8,6 @@
 import XCTest
 
 final class MeditoTVUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
