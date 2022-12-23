@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15EB2956331A00174616 /* MeditoTVApp.swift */; };
+		B8BF15EE2956331A00174616 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15ED2956331A00174616 /* ContentView.swift */; };
+		B8BF15F02956331B00174616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15EF2956331B00174616 /* Assets.xcassets */; };
+		B8BF15F32956331B00174616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15F22956331B00174616 /* Preview Assets.xcassets */; };
+		B8BF15FD2956331C00174616 /* MeditoTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15FC2956331C00174616 /* MeditoTVTests.swift */; };
+		B8BF16072956331C00174616 /* MeditoTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16062956331C00174616 /* MeditoTVUITests.swift */; };
+		B8BF16092956331C00174616 /* MeditoTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16082956331C00174616 /* MeditoTVUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8BF15F92956331C00174616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8BF15E02956331A00174616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8BF15E72956331A00174616;
+			remoteInfo = MeditoTV;
+		};
+		B8BF16032956331C00174616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8BF15E02956331A00174616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8BF15E72956331A00174616;
+			remoteInfo = MeditoTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B8BF15E82956331A00174616 /* MeditoTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditoTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BF15EB2956331A00174616 /* MeditoTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVApp.swift; sourceTree = "<group>"; };
+		B8BF15ED2956331A00174616 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8BF15EF2956331B00174616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8BF15F22956331B00174616 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8BF15F82956331C00174616 /* MeditoTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditoTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BF15FC2956331C00174616 /* MeditoTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVTests.swift; sourceTree = "<group>"; };
+		B8BF16022956331C00174616 /* MeditoTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditoTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BF16062956331C00174616 /* MeditoTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVUITests.swift; sourceTree = "<group>"; };
+		B8BF16082956331C00174616 /* MeditoTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8BF15E52956331A00174616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF15F52956331C00174616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF15FF2956331C00174616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8BF15DF2956331900174616 = {
+			isa = PBXGroup;
+			children = (
+				B8BF15EA2956331A00174616 /* MeditoTV */,
+				B8BF15FB2956331C00174616 /* MeditoTVTests */,
+				B8BF16052956331C00174616 /* MeditoTVUITests */,
+				B8BF15E92956331A00174616 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8BF15E92956331A00174616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF15E82956331A00174616 /* MeditoTV.app */,
+				B8BF15F82956331C00174616 /* MeditoTVTests.xctest */,
+				B8BF16022956331C00174616 /* MeditoTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8BF15EA2956331A00174616 /* MeditoTV */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF15EB2956331A00174616 /* MeditoTVApp.swift */,
+				B8BF15ED2956331A00174616 /* ContentView.swift */,
+				B8BF15EF2956331B00174616 /* Assets.xcassets */,
+				B8BF15F12956331B00174616 /* Preview Content */,
+			);
+			path = MeditoTV;
+			sourceTree = "<group>";
+		};
+		B8BF15F12956331B00174616 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF15F22956331B00174616 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8BF15FB2956331C00174616 /* MeditoTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF15FC2956331C00174616 /* MeditoTVTests.swift */,
+			);
+			path = MeditoTVTests;
+			sourceTree = "<group>";
+		};
+		B8BF16052956331C00174616 /* MeditoTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF16062956331C00174616 /* MeditoTVUITests.swift */,
+				B8BF16082956331C00174616 /* MeditoTVUITestsLaunchTests.swift */,
+			);
+			path = MeditoTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8BF15E72956331A00174616 /* MeditoTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8BF160C2956331C00174616 /* Build configuration list for PBXNativeTarget "MeditoTV" */;
+			buildPhases = (
+				B8BF15E42956331A00174616 /* Sources */,
+				B8BF15E52956331A00174616 /* Frameworks */,
+				B8BF15E62956331A00174616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeditoTV;
+			productName = MeditoTV;
+			productReference = B8BF15E82956331A00174616 /* MeditoTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8BF15F72956331C00174616 /* MeditoTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8BF160F2956331C00174616 /* Build configuration list for PBXNativeTarget "MeditoTVTests" */;
+			buildPhases = (
+				B8BF15F42956331C00174616 /* Sources */,
+				B8BF15F52956331C00174616 /* Frameworks */,
+				B8BF15F62956331C00174616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8BF15FA2956331C00174616 /* PBXTargetDependency */,
+			);
+			name = MeditoTVTests;
+			productName = MeditoTVTests;
+			productReference = B8BF15F82956331C00174616 /* MeditoTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8BF16012956331C00174616 /* MeditoTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8BF16122956331C00174616 /* Build configuration list for PBXNativeTarget "MeditoTVUITests" */;
+			buildPhases = (
+				B8BF15FE2956331C00174616 /* Sources */,
+				B8BF15FF2956331C00174616 /* Frameworks */,
+				B8BF16002956331C00174616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8BF16042956331C00174616 /* PBXTargetDependency */,
+			);
+			name = MeditoTVUITests;
+			productName = MeditoTVUITests;
+			productReference = B8BF16022956331C00174616 /* MeditoTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8BF15E02956331A00174616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B8BF15E72956331A00174616 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B8BF15F72956331C00174616 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B8BF15E72956331A00174616;
+					};
+					B8BF16012956331C00174616 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B8BF15E72956331A00174616;
+					};
+				};
+			};
+			buildConfigurationList = B8BF15E32956331A00174616 /* Build configuration list for PBXProject "MeditoTV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8BF15DF2956331900174616;
+			productRefGroup = B8BF15E92956331A00174616 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8BF15E72956331A00174616 /* MeditoTV */,
+				B8BF15F72956331C00174616 /* MeditoTVTests */,
+				B8BF16012956331C00174616 /* MeditoTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8BF15E62956331A00174616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BF15F32956331B00174616 /* Preview Assets.xcassets in Resources */,
+				B8BF15F02956331B00174616 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF15F62956331C00174616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF16002956331C00174616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8BF15E42956331A00174616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BF15EE2956331A00174616 /* ContentView.swift in Sources */,
+				B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF15F42956331C00174616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BF15FD2956331C00174616 /* MeditoTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF15FE2956331C00174616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BF16092956331C00174616 /* MeditoTVUITestsLaunchTests.swift in Sources */,
+				B8BF16072956331C00174616 /* MeditoTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8BF15FA2956331C00174616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8BF15E72956331A00174616 /* MeditoTV */;
+			targetProxy = B8BF15F92956331C00174616 /* PBXContainerItemProxy */;
+		};
+		B8BF16042956331C00174616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8BF15E72956331A00174616 /* MeditoTV */;
+			targetProxy = B8BF16032956331C00174616 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B8BF160A2956331C00174616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		B8BF160B2956331C00174616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8BF160D2956331C00174616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeditoTV/Preview Content\"";
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medito.MeditoTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		B8BF160E2956331C00174616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeditoTV/Preview Content\"";
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medito.MeditoTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		B8BF16102956331C00174616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medito.MeditoTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeditoTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeditoTV";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		B8BF16112956331C00174616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medito.MeditoTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeditoTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeditoTV";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Release;
+		};
+		B8BF16132956331C00174616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medito.MeditoTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = MeditoTV;
+			};
+			name = Debug;
+		};
+		B8BF16142956331C00174616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medito.MeditoTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = MeditoTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8BF15E32956331A00174616 /* Build configuration list for PBXProject "MeditoTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BF160A2956331C00174616 /* Debug */,
+				B8BF160B2956331C00174616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8BF160C2956331C00174616 /* Build configuration list for PBXNativeTarget "MeditoTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BF160D2956331C00174616 /* Debug */,
+				B8BF160E2956331C00174616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8BF160F2956331C00174616 /* Build configuration list for PBXNativeTarget "MeditoTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BF16102956331C00174616 /* Debug */,
+				B8BF16112956331C00174616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8BF16122956331C00174616 /* Build configuration list for PBXNativeTarget "MeditoTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BF16132956331C00174616 /* Debug */,
+				B8BF16142956331C00174616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8BF15E02956331A00174616 /* Project object */;
+}
