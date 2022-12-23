@@ -305,6 +305,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		B8BF161D29563A6200174616 /* Swiftformat */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -323,6 +324,7 @@
 		};
 		B8BF161E29563ABE00174616 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
