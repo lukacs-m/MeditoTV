@@ -100,11 +100,11 @@
 		B8BF15EA2956331A00174616 /* MeditoTV */ = {
 			isa = PBXGroup;
 			children = (
-				B8BF1618295637C100174616 /* Shared */,
-				B8BF1617295637BB00174616 /* Scenes */,
-				B8BF1616295637B000174616 /* AppManagement */,
 				B8BF1615295637A900174616 /* App */,
+				B8BF1616295637B000174616 /* AppManagement */,
 				B8BF15ED2956331A00174616 /* ContentView.swift */,
+				B8BF1617295637BB00174616 /* Scenes */,
+				B8BF1618295637C100174616 /* Shared */,
 			);
 			path = MeditoTV;
 			sourceTree = "<group>";
