@@ -45,22 +45,7 @@ final class MainTabCoordinator {
         case .packs:
             Text("Packs")
         case .settings:
-            Text("settings")
-        }
-    }
-}
-
-extension View {
-    func withMainTabCoordinator() -> some View {
-        navigationDestination(for: MainTabDestination.self) { destination in
-            switch destination {
-            case .home:
-                Text("home")
-            case .packs:
-                Text("Packs")
-            case .settings:
-                Text("settings")
-            }
+            Text("Settings")
         }
     }
 }
