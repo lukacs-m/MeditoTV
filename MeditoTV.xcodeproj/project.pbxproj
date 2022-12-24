@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15EB2956331A00174616 /* MeditoTVApp.swift */; };
-		B8BF15EE2956331A00174616 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15ED2956331A00174616 /* ContentView.swift */; };
 		B8BF15F02956331B00174616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15EF2956331B00174616 /* Assets.xcassets */; };
 		B8BF15F32956331B00174616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15F22956331B00174616 /* Preview Assets.xcassets */; };
 		B8BF15FD2956331C00174616 /* MeditoTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15FC2956331C00174616 /* MeditoTVTests.swift */; };
 		B8BF161C2956388A00174616 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF161B2956388A00174616 /* Factory */; };
 		B8BF162429564BC200174616 /* MeditoUI in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF162329564BC200174616 /* MeditoUI */; };
 		B8BF162729564D2D00174616 /* MeditoAPI in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF162629564D2D00174616 /* MeditoAPI */; };
+		B8BF162D29565AE800174616 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF162B29565AE800174616 /* MainTabView.swift */; };
+		B8BF162E29565AE800174616 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF162C29565AE800174616 /* MainTabViewModel.swift */; };
+		B8BF16312956752B00174616 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16302956752B00174616 /* MainTabCoordinator.swift */; };
+		B8BF1634295677F900174616 /* Coordinators+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF1633295677F900174616 /* Coordinators+Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		B8BF15E82956331A00174616 /* MeditoTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditoTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BF15EB2956331A00174616 /* MeditoTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVApp.swift; sourceTree = "<group>"; };
-		B8BF15ED2956331A00174616 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8BF15EF2956331B00174616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8BF15F22956331B00174616 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8BF15F82956331C00174616 /* MeditoTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditoTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,10 @@
 		B8BF16022956331C00174616 /* MeditoTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditoTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BF162129564BA800174616 /* MeditoUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MeditoUI; path = LocalPackages/MeditoUI; sourceTree = "<group>"; };
 		B8BF162529564D2600174616 /* MeditoAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MeditoAPI; path = LocalPackages/MeditoAPI; sourceTree = "<group>"; };
+		B8BF162B29565AE800174616 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B8BF162C29565AE800174616 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		B8BF16302956752B00174616 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
+		B8BF1633295677F900174616 /* Coordinators+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinators+Dependencies.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +108,6 @@
 			children = (
 				B8BF1615295637A900174616 /* App */,
 				B8BF1616295637B000174616 /* AppManagement */,
-				B8BF15ED2956331A00174616 /* ContentView.swift */,
 				B8BF1617295637BB00174616 /* Scenes */,
 				B8BF1618295637C100174616 /* Shared */,
 			);
@@ -138,6 +143,8 @@
 		B8BF1616295637B000174616 /* AppManagement */ = {
 			isa = PBXGroup;
 			children = (
+				B8BF1632295677CC00174616 /* Depencendies */,
+				B8BF162F2956751600174616 /* Coordinators */,
 			);
 			path = AppManagement;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 		B8BF1617295637BB00174616 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B8BF162A29565AC700174616 /* MainTabView */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -169,6 +177,31 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8BF162A29565AC700174616 /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF162B29565AE800174616 /* MainTabView.swift */,
+				B8BF162C29565AE800174616 /* MainTabViewModel.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
+		B8BF162F2956751600174616 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF16302956752B00174616 /* MainTabCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B8BF1632295677CC00174616 /* Depencendies */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF1633295677F900174616 /* Coordinators+Dependencies.swift */,
+			);
+			path = Depencendies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,8 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8BF15EE2956331A00174616 /* ContentView.swift in Sources */,
 				B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */,
+				B8BF1634295677F900174616 /* Coordinators+Dependencies.swift in Sources */,
+				B8BF162D29565AE800174616 /* MainTabView.swift in Sources */,
+				B8BF162E29565AE800174616 /* MainTabViewModel.swift in Sources */,
+				B8BF16312956752B00174616 /* MainTabCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

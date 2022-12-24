@@ -11,7 +11,9 @@ import SwiftUI
 struct MeditoTVApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                MainTabView()
+            }
         }
     }
 }

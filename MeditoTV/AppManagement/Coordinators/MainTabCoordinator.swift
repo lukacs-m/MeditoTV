@@ -1,0 +1,66 @@
+//
+//  MainTabCoordinator.swift
+//  MeditoTV
+//
+//  Created by Martin Lukacs on 24/12/2022.
+//
+
+import SwiftUI
+
+enum MainTabDestination: CaseIterable, Codable {
+    case home
+    case packs
+    case settings
+
+    var name: LocalizedStringKey {
+        switch self {
+        case .home:
+            return "Home"
+        case .packs:
+            return "Packs"
+        case .settings:
+            return "Settings"
+        }
+    }
+
+    var tabNumber: Int {
+        switch self {
+        case .home:
+            return 0
+        case .packs:
+            return 1
+        case .settings:
+            return 2
+        }
+    }
+}
+
+// Main TabView Destinations
+final class MainTabCoordinator {
+    @ViewBuilder
+    func goToPage(for destination: MainTabDestination) -> some View {
+        switch destination {
+        case .home:
+            Text("home")
+        case .packs:
+            Text("Packs")
+        case .settings:
+            Text("settings")
+        }
+    }
+}
+
+extension View {
+    func withMainTabCoordinator() -> some View {
+        navigationDestination(for: MainTabDestination.self) { destination in
+            switch destination {
+            case .home:
+                Text("home")
+            case .packs:
+                Text("Packs")
+            case .settings:
+                Text("settings")
+            }
+        }
+    }
+}
