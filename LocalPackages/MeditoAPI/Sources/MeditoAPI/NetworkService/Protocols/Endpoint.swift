@@ -1,6 +1,6 @@
 //
 //  Endpoint.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 24/12/2022.
 //
@@ -20,7 +20,7 @@ public extension Endpoint {
     var scheme: String {
         "https"
     }
-    
+
     var request: URLRequest? {
         var urlComponents = URLComponents()
         urlComponents.scheme = scheme

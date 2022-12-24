@@ -1,6 +1,6 @@
 //
 //  NetworkingClientImplementing.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 24/12/2022.
 //
@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-public protocol NetworkingClientImplementing: AnyObject {
+public protocol NetworkingClientImplementing: AnyObject, Sendable {
     var session: URLSession { get }
     func sendRequest<ReturnedType: Decodable>(endpoint: Endpoint) async throws -> ReturnedType
     func sendRequest<ReturnedType: Decodable>(endpoint: Endpoint) -> AnyPublisher<ReturnedType, Error>

@@ -1,6 +1,6 @@
 //
 //  CRUDRequestMethod.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 24/12/2022.
 //
@@ -12,4 +12,3 @@ public enum CRUDRequestMethod: String {
     case post = "POST"
     case put = "PUT"
 }
-

@@ -1,6 +1,6 @@
 //
 //  HTTPErrors.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 24/12/2022.
 //
@@ -38,7 +38,7 @@ enum HTTPErrors: Error {
             return "Unknown error"
         }
     }
-    
+
     static func error(for statusCode: Int) -> HTTPErrors {
         switch statusCode {
         case 400:

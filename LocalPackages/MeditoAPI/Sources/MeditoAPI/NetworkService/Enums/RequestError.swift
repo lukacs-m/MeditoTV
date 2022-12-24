@@ -1,6 +1,6 @@
 //
 //  RequestError.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 24/12/2022.
 //
