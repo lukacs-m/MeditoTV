@@ -1,6 +1,6 @@
 //
 //  LoadingView.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 26/12/2022.
 //
@@ -22,7 +22,6 @@ public struct LoadingView: View {
 
     public var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea()
             VStack {
                 Spacer()
                 ProgressView()
@@ -31,8 +30,13 @@ public struct LoadingView: View {
                 Spacer()
                 if let title {
                     Text(title)
+                        .fixedSize()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
-            }.frame(minWidth: 1980, maxWidth: .infinity)
+            }
+            .padding()
+            .background(.ultraThickMaterial,
+                        in: RoundedRectangle(cornerRadius: 8, style: .continuous))
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("Loading View")

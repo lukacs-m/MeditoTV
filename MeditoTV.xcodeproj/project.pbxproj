@@ -29,9 +29,8 @@
 		B8BF164C295870A300174616 /* ApplicationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164B295870A300174616 /* ApplicationConfiguration.swift */; };
 		B8BF165029587BE400174616 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164E29587BE400174616 /* HomeView.swift */; };
 		B8BF165129587BE400174616 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164F29587BE400174616 /* HomeViewModel.swift */; };
-		B8BF165C2958B60800174616 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF165B2958B60800174616 /* Nuke */; };
-		B8BF165E2958B60800174616 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF165D2958B60800174616 /* NukeExtensions */; };
-		B8BF16602958B60800174616 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF165F2958B60800174616 /* NukeUI */; };
+		B8BF16632959A98700174616 /* PageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16622959A98700174616 /* PageState.swift */; };
+		B8BF16652959A9C600174616 /* SupportedContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16642959A9C600174616 /* SupportedContentType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +74,8 @@
 		B8BF164B295870A300174616 /* ApplicationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfiguration.swift; sourceTree = "<group>"; };
 		B8BF164E29587BE400174616 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B8BF164F29587BE400174616 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B8BF16622959A98700174616 /* PageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageState.swift; sourceTree = "<group>"; };
+		B8BF16642959A9C600174616 /* SupportedContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedContentType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +84,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8BF164629586CDF00174616 /* SafeCache in Frameworks */,
-				B8BF16602958B60800174616 /* NukeUI in Frameworks */,
 				B8BF162429564BC200174616 /* MeditoUI in Frameworks */,
 				B8BF162729564D2D00174616 /* MeditoAPI in Frameworks */,
 				B8BF161C2956388A00174616 /* Factory in Frameworks */,
-				B8BF165C2958B60800174616 /* Nuke in Frameworks */,
-				B8BF165E2958B60800174616 /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +188,8 @@
 		B8BF1618295637C100174616 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B8BF16672959E21800174616 /* Extensions */,
+				B8BF16612959A97900174616 /* Enumerations */,
 				B8BF163F29586B5800174616 /* Data */,
 				B8BF163E29586B5100174616 /* Domain */,
 				B8BF16352956819600174616 /* Utils.swift */,
@@ -290,6 +290,22 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
+		B8BF16612959A97900174616 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF16622959A98700174616 /* PageState.swift */,
+				B8BF16642959A9C600174616 /* SupportedContentType.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		B8BF16672959E21800174616 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,9 +329,6 @@
 				B8BF162329564BC200174616 /* MeditoUI */,
 				B8BF162629564D2D00174616 /* MeditoAPI */,
 				B8BF164529586CDF00174616 /* SafeCache */,
-				B8BF165B2958B60800174616 /* Nuke */,
-				B8BF165D2958B60800174616 /* NukeExtensions */,
-				B8BF165F2958B60800174616 /* NukeUI */,
 			);
 			productName = MeditoTV;
 			productReference = B8BF15E82956331A00174616 /* MeditoTV.app */;
@@ -392,7 +405,6 @@
 			packageReferences = (
 				B8BF161A2956388A00174616 /* XCRemoteSwiftPackageReference "Factory" */,
 				B8BF164429586CDF00174616 /* XCRemoteSwiftPackageReference "SafeCache" */,
-				B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = B8BF15E92956331A00174616 /* Products */;
 			projectDirPath = "";
@@ -487,6 +499,8 @@
 				B8BF164329586BCA00174616 /* GetShortcuts.swift in Sources */,
 				B8BF164A29586F6900174616 /* GetCourses.swift in Sources */,
 				B8BF164829586EED00174616 /* UseCases+Dependencies.swift in Sources */,
+				B8BF16652959A9C600174616 /* SupportedContentType.swift in Sources */,
+				B8BF16632959A98700174616 /* PageState.swift in Sources */,
 				B8BF165129587BE400174616 /* HomeViewModel.swift in Sources */,
 				B8BF16312956752B00174616 /* MainTabCoordinator.swift in Sources */,
 				B8BF164C295870A300174616 /* ApplicationConfiguration.swift in Sources */,
@@ -825,15 +839,7 @@
 			repositoryURL = "https://github.com/lukacs-m/SafeCache";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
-			};
-		};
-		B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.0;
+				minimumVersion = 0.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -856,21 +862,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B8BF164429586CDF00174616 /* XCRemoteSwiftPackageReference "SafeCache" */;
 			productName = SafeCache;
-		};
-		B8BF165B2958B60800174616 /* Nuke */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
-		};
-		B8BF165D2958B60800174616 /* NukeExtensions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = NukeExtensions;
-		};
-		B8BF165F2958B60800174616 /* NukeUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = NukeUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

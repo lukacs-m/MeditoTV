@@ -1,6 +1,6 @@
 //
 //  Color.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 26/12/2022.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 // swiftlint:disable identifier_name
-extension Color {
+public extension Color {
     init(hex string: String) {
         var string: String = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         if string.hasPrefix("#") {

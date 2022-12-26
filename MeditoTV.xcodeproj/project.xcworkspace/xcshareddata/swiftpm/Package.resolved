@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukacs-m/SafeCache",
       "state" : {
-        "revision" : "1c63e30bd8761f421a51fe1d381dc1fc11d2cc31",
-        "version" : "0.1.0"
+        "revision" : "aef7b0e59e42780e72d7d57fef2a6e656cdda3b8",
+        "version" : "0.1.1"
       }
     }
   ],
