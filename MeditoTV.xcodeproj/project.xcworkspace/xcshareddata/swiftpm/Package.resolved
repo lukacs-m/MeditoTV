@@ -8,6 +8,24 @@
         "revision" : "ca5788b8621b185a0fbe6ef05bb9a73b3ef2833f",
         "version" : "1.2.9"
       }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke.git",
+      "state" : {
+        "revision" : "1e7395a8931ad19659fd1e10137a862b9c1e2a38",
+        "version" : "11.5.0"
+      }
+    },
+    {
+      "identity" : "safecache",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lukacs-m/SafeCache",
+      "state" : {
+        "revision" : "1c63e30bd8761f421a51fe1d381dc1fc11d2cc31",
+        "version" : "0.1.0"
+      }
     }
   ],
   "version" : 2

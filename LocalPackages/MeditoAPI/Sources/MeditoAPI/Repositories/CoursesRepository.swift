@@ -1,6 +1,6 @@
 //
 //  CoursesRepository.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 24/12/2022.
 //
@@ -68,4 +68,3 @@ public final class CoursesRepository: CoursesServicing, Sendable {
         try await apiClient.sendRequest(endpoint: CoursesEndpoint.courses)
     }
 }
-

@@ -21,7 +21,17 @@
 		B8BF16362956819700174616 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16352956819600174616 /* Utils.swift */; };
 		B8BF163929571DBB00174616 /* Medito-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8BF163829571DBB00174616 /* Medito-Info.plist */; };
 		B8BF163B2957272600174616 /* Services+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF163A2957272600174616 /* Services+Dependencies.swift */; };
-		B8BF163D2957273700174616 /* Repositories+Dependencis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF163C2957273700174616 /* Repositories+Dependencis.swift */; };
+		B8BF163D2957273700174616 /* Repositories+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF163C2957273700174616 /* Repositories+Dependencies.swift */; };
+		B8BF164329586BCA00174616 /* GetShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164229586BCA00174616 /* GetShortcuts.swift */; };
+		B8BF164629586CDF00174616 /* SafeCache in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF164529586CDF00174616 /* SafeCache */; };
+		B8BF164829586EED00174616 /* UseCases+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164729586EED00174616 /* UseCases+Dependencies.swift */; };
+		B8BF164A29586F6900174616 /* GetCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164929586F6900174616 /* GetCourses.swift */; };
+		B8BF164C295870A300174616 /* ApplicationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164B295870A300174616 /* ApplicationConfiguration.swift */; };
+		B8BF165029587BE400174616 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164E29587BE400174616 /* HomeView.swift */; };
+		B8BF165129587BE400174616 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF164F29587BE400174616 /* HomeViewModel.swift */; };
+		B8BF165C2958B60800174616 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF165B2958B60800174616 /* Nuke */; };
+		B8BF165E2958B60800174616 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF165D2958B60800174616 /* NukeExtensions */; };
+		B8BF16602958B60800174616 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = B8BF165F2958B60800174616 /* NukeUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +68,13 @@
 		B8BF16352956819600174616 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B8BF163829571DBB00174616 /* Medito-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Medito-Info.plist"; sourceTree = "<group>"; };
 		B8BF163A2957272600174616 /* Services+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services+Dependencies.swift"; sourceTree = "<group>"; };
-		B8BF163C2957273700174616 /* Repositories+Dependencis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Dependencis.swift"; sourceTree = "<group>"; };
+		B8BF163C2957273700174616 /* Repositories+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Dependencies.swift"; sourceTree = "<group>"; };
+		B8BF164229586BCA00174616 /* GetShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShortcuts.swift; sourceTree = "<group>"; };
+		B8BF164729586EED00174616 /* UseCases+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCases+Dependencies.swift"; sourceTree = "<group>"; };
+		B8BF164929586F6900174616 /* GetCourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCourses.swift; sourceTree = "<group>"; };
+		B8BF164B295870A300174616 /* ApplicationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfiguration.swift; sourceTree = "<group>"; };
+		B8BF164E29587BE400174616 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B8BF164F29587BE400174616 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +82,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BF164629586CDF00174616 /* SafeCache in Frameworks */,
+				B8BF16602958B60800174616 /* NukeUI in Frameworks */,
 				B8BF162429564BC200174616 /* MeditoUI in Frameworks */,
 				B8BF162729564D2D00174616 /* MeditoAPI in Frameworks */,
 				B8BF161C2956388A00174616 /* Factory in Frameworks */,
+				B8BF165C2958B60800174616 /* Nuke in Frameworks */,
+				B8BF165E2958B60800174616 /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +181,7 @@
 		B8BF1617295637BB00174616 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B8BF164D29587BD200174616 /* HomeView */,
 				B8BF162A29565AC700174616 /* MainTabView */,
 			);
 			path = Scenes;
@@ -169,6 +190,8 @@
 		B8BF1618295637C100174616 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B8BF163F29586B5800174616 /* Data */,
+				B8BF163E29586B5100174616 /* Domain */,
 				B8BF16352956819600174616 /* Utils.swift */,
 			);
 			path = Shared;
@@ -211,7 +234,8 @@
 			children = (
 				B8BF1633295677F900174616 /* Coordinators+Dependencies.swift */,
 				B8BF163A2957272600174616 /* Services+Dependencies.swift */,
-				B8BF163C2957273700174616 /* Repositories+Dependencis.swift */,
+				B8BF163C2957273700174616 /* Repositories+Dependencies.swift */,
+				B8BF164729586EED00174616 /* UseCases+Dependencies.swift */,
 			);
 			path = Depencendies;
 			sourceTree = "<group>";
@@ -220,8 +244,50 @@
 			isa = PBXGroup;
 			children = (
 				B8BF163829571DBB00174616 /* Medito-Info.plist */,
+				B8BF164B295870A300174616 /* ApplicationConfiguration.swift */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		B8BF163E29586B5100174616 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF164029586B9000174616 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B8BF163F29586B5800174616 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B8BF164029586B9000174616 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF164129586BAB00174616 /* Content */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B8BF164129586BAB00174616 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF164229586BCA00174616 /* GetShortcuts.swift */,
+				B8BF164929586F6900174616 /* GetCourses.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		B8BF164D29587BD200174616 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF164E29587BE400174616 /* HomeView.swift */,
+				B8BF164F29587BE400174616 /* HomeViewModel.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +312,10 @@
 				B8BF161B2956388A00174616 /* Factory */,
 				B8BF162329564BC200174616 /* MeditoUI */,
 				B8BF162629564D2D00174616 /* MeditoAPI */,
+				B8BF164529586CDF00174616 /* SafeCache */,
+				B8BF165B2958B60800174616 /* Nuke */,
+				B8BF165D2958B60800174616 /* NukeExtensions */,
+				B8BF165F2958B60800174616 /* NukeUI */,
 			);
 			productName = MeditoTV;
 			productReference = B8BF15E82956331A00174616 /* MeditoTV.app */;
@@ -321,6 +391,8 @@
 			mainGroup = B8BF15DF2956331900174616;
 			packageReferences = (
 				B8BF161A2956388A00174616 /* XCRemoteSwiftPackageReference "Factory" */,
+				B8BF164429586CDF00174616 /* XCRemoteSwiftPackageReference "SafeCache" */,
+				B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = B8BF15E92956331A00174616 /* Products */;
 			projectDirPath = "";
@@ -408,11 +480,17 @@
 			files = (
 				B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */,
 				B8BF1634295677F900174616 /* Coordinators+Dependencies.swift in Sources */,
+				B8BF165029587BE400174616 /* HomeView.swift in Sources */,
 				B8BF162D29565AE800174616 /* MainTabView.swift in Sources */,
 				B8BF163B2957272600174616 /* Services+Dependencies.swift in Sources */,
 				B8BF162E29565AE800174616 /* MainTabViewModel.swift in Sources */,
+				B8BF164329586BCA00174616 /* GetShortcuts.swift in Sources */,
+				B8BF164A29586F6900174616 /* GetCourses.swift in Sources */,
+				B8BF164829586EED00174616 /* UseCases+Dependencies.swift in Sources */,
+				B8BF165129587BE400174616 /* HomeViewModel.swift in Sources */,
 				B8BF16312956752B00174616 /* MainTabCoordinator.swift in Sources */,
-				B8BF163D2957273700174616 /* Repositories+Dependencis.swift in Sources */,
+				B8BF164C295870A300174616 /* ApplicationConfiguration.swift in Sources */,
+				B8BF163D2957273700174616 /* Repositories+Dependencies.swift in Sources */,
 				B8BF16362956819700174616 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -742,6 +820,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		B8BF164429586CDF00174616 /* XCRemoteSwiftPackageReference "SafeCache" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukacs-m/SafeCache";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -757,6 +851,26 @@
 		B8BF162629564D2D00174616 /* MeditoAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MeditoAPI;
+		};
+		B8BF164529586CDF00174616 /* SafeCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8BF164429586CDF00174616 /* XCRemoteSwiftPackageReference "SafeCache" */;
+			productName = SafeCache;
+		};
+		B8BF165B2958B60800174616 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		B8BF165D2958B60800174616 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		B8BF165F2958B60800174616 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8BF165A2958B60800174616 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

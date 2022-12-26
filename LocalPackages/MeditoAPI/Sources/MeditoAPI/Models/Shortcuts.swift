@@ -27,7 +27,7 @@ public struct Shortcuts: Codable, Sendable {
 
 // MARK: - Shortcut
 
-public struct Shortcut: Codable, Identifiable, Sendable {
+public struct Shortcut: Codable, Identifiable, Sendable, Diplayable {
     public let title, type, id: String?
     public let cover: String?
     public let primaryColor: String?
