@@ -1,6 +1,6 @@
 //
 //  Courses.swift
-//  
+//
 //
 //  Created by Martin Lukacs on 24/12/2022.
 //
@@ -9,17 +9,17 @@ import Foundation
 
 // MARK: - Courses
 
-public struct Courses: Codable, Sendable  {
-   public let courses: [Course]
+public struct Courses: Codable, Sendable {
+    public let courses: [Course]
 
     enum CodingKeys: String, CodingKey {
         case courses = "data"
     }
-    
+
     public init(courses: [Course]) {
         self.courses = courses
     }
-    
+
     public init(data: Data) throws {
         self = try JSONDecoder().decode(Courses.self, from: data)
     }
@@ -49,7 +49,7 @@ public struct Course: Codable, Identifiable, Sendable {
         self.backgroundImage = backgroundImage
         self.primaryColor = primaryColor
     }
-    
+
     public init(data: Data) throws {
         self = try JSONDecoder().decode(Course.self, from: data)
     }

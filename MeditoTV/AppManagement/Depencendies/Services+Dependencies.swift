@@ -5,8 +5,8 @@
 //  Created by Martin Lukacs on 24/12/2022.
 //
 
-import MeditoAPI
 import Factory
+import MeditoAPI
 
 /// Container for services
 final class ServicesContainer: SharedContainer {

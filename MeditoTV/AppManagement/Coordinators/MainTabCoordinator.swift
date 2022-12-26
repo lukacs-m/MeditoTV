@@ -37,11 +37,11 @@ enum MainTabDestination: CaseIterable, Codable {
 
 // Main TabView Destinations
 final class MainTabCoordinator {
-    @ViewBuilder
+    @MainActor @ViewBuilder
     func goToPage(for destination: MainTabDestination) -> some View {
         switch destination {
         case .home:
-            Text("home")
+            HomeView()
         case .packs:
             Text("Packs")
         case .settings:
