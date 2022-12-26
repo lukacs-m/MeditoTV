@@ -23,18 +23,16 @@ public struct LoadingView: View {
     public var body: some View {
         ZStack {
             VStack {
-                Spacer()
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: .white))
                     .accessibility(hidden: true)
-                Spacer()
+                    .padding(.bottom, 20)
                 if let title {
                     Text(title)
                         .fixedSize()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
             }
-            .padding()
+            .padding(40)
             .background(.ultraThickMaterial,
                         in: RoundedRectangle(cornerRadius: 8, style: .continuous))
         }

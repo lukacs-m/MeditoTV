@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B839EBF32959FF2100B445C7 /* MeditoAPI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF22959FF2100B445C7 /* MeditoAPI+Extensions.swift */; };
 		B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15EB2956331A00174616 /* MeditoTVApp.swift */; };
 		B8BF15F02956331B00174616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15EF2956331B00174616 /* Assets.xcassets */; };
 		B8BF15F32956331B00174616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15F22956331B00174616 /* Preview Assets.xcassets */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B839EBF22959FF2100B445C7 /* MeditoAPI+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditoAPI+Extensions.swift"; sourceTree = "<group>"; };
 		B8BF15E82956331A00174616 /* MeditoTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditoTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BF15EB2956331A00174616 /* MeditoTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVApp.swift; sourceTree = "<group>"; };
 		B8BF15EF2956331B00174616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 		B8BF16672959E21800174616 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B839EBF22959FF2100B445C7 /* MeditoAPI+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				B8BF163B2957272600174616 /* Services+Dependencies.swift in Sources */,
 				B8BF162E29565AE800174616 /* MainTabViewModel.swift in Sources */,
 				B8BF164329586BCA00174616 /* GetShortcuts.swift in Sources */,
+				B839EBF32959FF2100B445C7 /* MeditoAPI+Extensions.swift in Sources */,
 				B8BF164A29586F6900174616 /* GetCourses.swift in Sources */,
 				B8BF164829586EED00174616 /* UseCases+Dependencies.swift in Sources */,
 				B8BF16652959A9C600174616 /* SupportedContentType.swift in Sources */,
