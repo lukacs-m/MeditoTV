@@ -22,21 +22,22 @@ public struct DisplayableItemView: View {
                 LazyImage(url: element.imageURL, resizingMode: .aspectFit)
                     .padding(.vertical, 20)
                     .frame(height: proxy.size.height * 0.65)
-                    .background(Color(hex: element.backgroundColor))
+                    .background(Color(hex: element.backgroundColor).opacity(0.9))
 
                 VStack(alignment: .leading) {
                     Spacer()
                     Text(element.title ?? "")
                         .font(.subheadline)
+                        .lineLimit(1)
                         .foregroundStyle(.primary)
-                        .lineLimit(3)
-                        .fixedSize()
+
                     if let subtitle = element.subtitle {
                         Text(subtitle)
                             .font(.caption)
+                            .lineLimit(3)
                             .foregroundStyle(.secondary)
-                            .lineLimit(1)
-                            .fixedSize()
+                            .multilineTextAlignment(.leading)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                     Spacer()
                 }

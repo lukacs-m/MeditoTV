@@ -17,4 +17,8 @@ final class RepositoriesContainer: SharedContainer {
     static let coursesRepository = Factory<CoursesServicing>(scope: .singleton) {
         CoursesRepository(apiService: ServicesContainer.meditoNetworkService())
     }
+
+    static let mindfullPacksRepository = Factory<MindfullPacksServicing>(scope: .singleton) {
+        MindfullPacksRepository(apiService: ServicesContainer.meditoNetworkService())
+    }
 }

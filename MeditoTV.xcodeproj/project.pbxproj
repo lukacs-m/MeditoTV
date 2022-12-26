@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B839EBF32959FF2100B445C7 /* MeditoAPI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF22959FF2100B445C7 /* MeditoAPI+Extensions.swift */; };
+		B839EBF7295A098B00B445C7 /* MindfullPacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF5295A098B00B445C7 /* MindfullPacksView.swift */; };
+		B839EBF8295A098B00B445C7 /* MindfullPacksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF6295A098B00B445C7 /* MindfullPacksViewModel.swift */; };
+		B839EBFA295A09DD00B445C7 /* GetMindfullPacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF9295A09DD00B445C7 /* GetMindfullPacks.swift */; };
 		B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15EB2956331A00174616 /* MeditoTVApp.swift */; };
 		B8BF15F02956331B00174616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15EF2956331B00174616 /* Assets.xcassets */; };
 		B8BF15F32956331B00174616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15F22956331B00174616 /* Preview Assets.xcassets */; };
@@ -19,7 +22,6 @@
 		B8BF162E29565AE800174616 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF162C29565AE800174616 /* MainTabViewModel.swift */; };
 		B8BF16312956752B00174616 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16302956752B00174616 /* MainTabCoordinator.swift */; };
 		B8BF1634295677F900174616 /* Coordinators+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF1633295677F900174616 /* Coordinators+Dependencies.swift */; };
-		B8BF16362956819700174616 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF16352956819600174616 /* Utils.swift */; };
 		B8BF163929571DBB00174616 /* Medito-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8BF163829571DBB00174616 /* Medito-Info.plist */; };
 		B8BF163B2957272600174616 /* Services+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF163A2957272600174616 /* Services+Dependencies.swift */; };
 		B8BF163D2957273700174616 /* Repositories+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF163C2957273700174616 /* Repositories+Dependencies.swift */; };
@@ -53,6 +55,9 @@
 
 /* Begin PBXFileReference section */
 		B839EBF22959FF2100B445C7 /* MeditoAPI+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditoAPI+Extensions.swift"; sourceTree = "<group>"; };
+		B839EBF5295A098B00B445C7 /* MindfullPacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfullPacksView.swift; sourceTree = "<group>"; };
+		B839EBF6295A098B00B445C7 /* MindfullPacksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfullPacksViewModel.swift; sourceTree = "<group>"; };
+		B839EBF9295A09DD00B445C7 /* GetMindfullPacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMindfullPacks.swift; sourceTree = "<group>"; };
 		B8BF15E82956331A00174616 /* MeditoTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditoTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BF15EB2956331A00174616 /* MeditoTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVApp.swift; sourceTree = "<group>"; };
 		B8BF15EF2956331B00174616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +71,6 @@
 		B8BF162C29565AE800174616 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		B8BF16302956752B00174616 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
 		B8BF1633295677F900174616 /* Coordinators+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinators+Dependencies.swift"; sourceTree = "<group>"; };
-		B8BF16352956819600174616 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B8BF163829571DBB00174616 /* Medito-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Medito-Info.plist"; sourceTree = "<group>"; };
 		B8BF163A2957272600174616 /* Services+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services+Dependencies.swift"; sourceTree = "<group>"; };
 		B8BF163C2957273700174616 /* Repositories+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Dependencies.swift"; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B839EBF4295A097400B445C7 /* MindfullPacksView */ = {
+			isa = PBXGroup;
+			children = (
+				B839EBF5295A098B00B445C7 /* MindfullPacksView.swift */,
+				B839EBF6295A098B00B445C7 /* MindfullPacksViewModel.swift */,
+			);
+			path = MindfullPacksView;
+			sourceTree = "<group>";
+		};
 		B8BF15DF2956331900174616 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +194,7 @@
 		B8BF1617295637BB00174616 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B839EBF4295A097400B445C7 /* MindfullPacksView */,
 				B8BF164D29587BD200174616 /* HomeView */,
 				B8BF162A29565AC700174616 /* MainTabView */,
 			);
@@ -194,7 +208,6 @@
 				B8BF16612959A97900174616 /* Enumerations */,
 				B8BF163F29586B5800174616 /* Data */,
 				B8BF163E29586B5100174616 /* Domain */,
-				B8BF16352956819600174616 /* Utils.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -279,6 +292,7 @@
 			children = (
 				B8BF164229586BCA00174616 /* GetShortcuts.swift */,
 				B8BF164929586F6900174616 /* GetCourses.swift */,
+				B839EBF9295A09DD00B445C7 /* GetMindfullPacks.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -497,8 +511,10 @@
 				B8BF1634295677F900174616 /* Coordinators+Dependencies.swift in Sources */,
 				B8BF165029587BE400174616 /* HomeView.swift in Sources */,
 				B8BF162D29565AE800174616 /* MainTabView.swift in Sources */,
+				B839EBFA295A09DD00B445C7 /* GetMindfullPacks.swift in Sources */,
 				B8BF163B2957272600174616 /* Services+Dependencies.swift in Sources */,
 				B8BF162E29565AE800174616 /* MainTabViewModel.swift in Sources */,
+				B839EBF7295A098B00B445C7 /* MindfullPacksView.swift in Sources */,
 				B8BF164329586BCA00174616 /* GetShortcuts.swift in Sources */,
 				B839EBF32959FF2100B445C7 /* MeditoAPI+Extensions.swift in Sources */,
 				B8BF164A29586F6900174616 /* GetCourses.swift in Sources */,
@@ -509,7 +525,7 @@
 				B8BF16312956752B00174616 /* MainTabCoordinator.swift in Sources */,
 				B8BF164C295870A300174616 /* ApplicationConfiguration.swift in Sources */,
 				B8BF163D2957273700174616 /* Repositories+Dependencies.swift in Sources */,
-				B8BF16362956819700174616 /* Utils.swift in Sources */,
+				B839EBF8295A098B00B445C7 /* MindfullPacksViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

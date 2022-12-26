@@ -43,7 +43,7 @@ final class MainTabCoordinator {
         case .home:
             HomeView()
         case .packs:
-            Text("Packs")
+            MindfullPacksView()
         case .settings:
             Text("Settings")
         }

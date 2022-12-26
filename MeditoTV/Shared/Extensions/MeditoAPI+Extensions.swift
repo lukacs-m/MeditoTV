@@ -10,3 +10,5 @@ import MeditoUI
 
 extension Course: Displayable {}
 extension Shortcut: Displayable {}
+extension MindfullPack: Displayable {}
+

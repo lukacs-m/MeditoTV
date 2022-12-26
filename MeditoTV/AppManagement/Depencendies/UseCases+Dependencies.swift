@@ -19,4 +19,8 @@ final class UseCasesContentContainer: SharedContainer {
     static let getCourses = Factory<GetCoursesUseCase>(scope: .shared) {
         GetCourses()
     }
+
+    static let getMindfullPacks = Factory<GetMindfullPacksUseCase>(scope: .shared) {
+        GetMindfullPacks()
+    }
 }

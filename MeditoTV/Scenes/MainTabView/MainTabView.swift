@@ -8,6 +8,7 @@
 //
 
 import Factory
+import MeditoUI
 import SwiftUI
 
 struct MainTabView: View {

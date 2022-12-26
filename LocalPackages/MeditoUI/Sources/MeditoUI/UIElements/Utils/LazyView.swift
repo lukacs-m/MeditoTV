@@ -1,8 +1,8 @@
 //
-//  Utils.swift
-//  MeditoTV
+//  LazyView.swift
 //
-//  Created by Martin Lukacs on 24/12/2022.
+//
+//  Created by Martin Lukacs on 26/12/2022.
 //
 
 import SwiftUI
