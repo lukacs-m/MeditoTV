@@ -21,4 +21,8 @@ final class RepositoriesContainer: SharedContainer {
     static let mindfullPacksRepository = Factory<MindfullPacksServicing>(scope: .singleton) {
         MindfullPacksRepository(apiService: ServicesContainer.meditoNetworkService())
     }
+
+    static let folderRepository = Factory<FolderServicing>(scope: .singleton) {
+        FolderRepository(apiService: ServicesContainer.meditoNetworkService())
+    }
 }

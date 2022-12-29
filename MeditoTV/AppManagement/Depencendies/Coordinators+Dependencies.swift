@@ -11,4 +11,5 @@ import Foundation
 /// Container for coordinators
 final class CoordinatorContainer: SharedContainer {
     static let mainTabCoordinator = Factory(scope: .singleton) { MainTabCoordinator() }
+    static let mainNavigationFlowCoordinator = Factory(scope: .singleton) { MainNavigationFlowCoordinator() }
 }

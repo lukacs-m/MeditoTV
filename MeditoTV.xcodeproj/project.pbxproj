@@ -11,6 +11,11 @@
 		B839EBF7295A098B00B445C7 /* MindfullPacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF5295A098B00B445C7 /* MindfullPacksView.swift */; };
 		B839EBF8295A098B00B445C7 /* MindfullPacksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF6295A098B00B445C7 /* MindfullPacksViewModel.swift */; };
 		B839EBFA295A09DD00B445C7 /* GetMindfullPacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBF9295A09DD00B445C7 /* GetMindfullPacks.swift */; };
+		B839EBFF295CE4CE00B445C7 /* MainNavigationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EBFE295CE4CE00B445C7 /* MainNavigationFlowCoordinator.swift */; };
+		B839EC03295CE71100B445C7 /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EC01295CE71100B445C7 /* FolderView.swift */; };
+		B839EC04295CE71100B445C7 /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EC02295CE71100B445C7 /* FolderViewModel.swift */; };
+		B839EC06295CEECF00B445C7 /* GetFolderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EC05295CEECF00B445C7 /* GetFolderDetails.swift */; };
+		B839EC09295E09CA00B445C7 /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839EC08295E09CA00B445C7 /* Navigable.swift */; };
 		B8BF15EC2956331A00174616 /* MeditoTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF15EB2956331A00174616 /* MeditoTVApp.swift */; };
 		B8BF15F02956331B00174616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15EF2956331B00174616 /* Assets.xcassets */; };
 		B8BF15F32956331B00174616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BF15F22956331B00174616 /* Preview Assets.xcassets */; };
@@ -58,6 +63,11 @@
 		B839EBF5295A098B00B445C7 /* MindfullPacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfullPacksView.swift; sourceTree = "<group>"; };
 		B839EBF6295A098B00B445C7 /* MindfullPacksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfullPacksViewModel.swift; sourceTree = "<group>"; };
 		B839EBF9295A09DD00B445C7 /* GetMindfullPacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMindfullPacks.swift; sourceTree = "<group>"; };
+		B839EBFE295CE4CE00B445C7 /* MainNavigationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationFlowCoordinator.swift; sourceTree = "<group>"; };
+		B839EC01295CE71100B445C7 /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		B839EC02295CE71100B445C7 /* FolderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
+		B839EC05295CEECF00B445C7 /* GetFolderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFolderDetails.swift; sourceTree = "<group>"; };
+		B839EC08295E09CA00B445C7 /* Navigable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigable.swift; sourceTree = "<group>"; };
 		B8BF15E82956331A00174616 /* MeditoTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditoTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BF15EB2956331A00174616 /* MeditoTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditoTVApp.swift; sourceTree = "<group>"; };
 		B8BF15EF2956331B00174616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +130,23 @@
 				B839EBF6295A098B00B445C7 /* MindfullPacksViewModel.swift */,
 			);
 			path = MindfullPacksView;
+			sourceTree = "<group>";
+		};
+		B839EC00295CE70000B445C7 /* FolderView */ = {
+			isa = PBXGroup;
+			children = (
+				B839EC01295CE71100B445C7 /* FolderView.swift */,
+				B839EC02295CE71100B445C7 /* FolderViewModel.swift */,
+			);
+			path = FolderView;
+			sourceTree = "<group>";
+		};
+		B839EC07295E09BA00B445C7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B839EC08295E09CA00B445C7 /* Navigable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B8BF15DF2956331900174616 = {
@@ -194,6 +221,7 @@
 		B8BF1617295637BB00174616 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B839EC00295CE70000B445C7 /* FolderView */,
 				B839EBF4295A097400B445C7 /* MindfullPacksView */,
 				B8BF164D29587BD200174616 /* HomeView */,
 				B8BF162A29565AC700174616 /* MainTabView */,
@@ -204,6 +232,7 @@
 		B8BF1618295637C100174616 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B839EC07295E09BA00B445C7 /* Protocols */,
 				B8BF16672959E21800174616 /* Extensions */,
 				B8BF16612959A97900174616 /* Enumerations */,
 				B8BF163F29586B5800174616 /* Data */,
@@ -240,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				B8BF16302956752B00174616 /* MainTabCoordinator.swift */,
+				B839EBFE295CE4CE00B445C7 /* MainNavigationFlowCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -293,6 +323,7 @@
 				B8BF164229586BCA00174616 /* GetShortcuts.swift */,
 				B8BF164929586F6900174616 /* GetCourses.swift */,
 				B839EBF9295A09DD00B445C7 /* GetMindfullPacks.swift */,
+				B839EC05295CEECF00B445C7 /* GetFolderDetails.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -515,11 +546,16 @@
 				B8BF163B2957272600174616 /* Services+Dependencies.swift in Sources */,
 				B8BF162E29565AE800174616 /* MainTabViewModel.swift in Sources */,
 				B839EBF7295A098B00B445C7 /* MindfullPacksView.swift in Sources */,
+				B839EC03295CE71100B445C7 /* FolderView.swift in Sources */,
 				B8BF164329586BCA00174616 /* GetShortcuts.swift in Sources */,
 				B839EBF32959FF2100B445C7 /* MeditoAPI+Extensions.swift in Sources */,
+				B839EC09295E09CA00B445C7 /* Navigable.swift in Sources */,
 				B8BF164A29586F6900174616 /* GetCourses.swift in Sources */,
 				B8BF164829586EED00174616 /* UseCases+Dependencies.swift in Sources */,
+				B839EC06295CEECF00B445C7 /* GetFolderDetails.swift in Sources */,
 				B8BF16652959A9C600174616 /* SupportedContentType.swift in Sources */,
+				B839EC04295CE71100B445C7 /* FolderViewModel.swift in Sources */,
+				B839EBFF295CE4CE00B445C7 /* MainNavigationFlowCoordinator.swift in Sources */,
 				B8BF16632959A98700174616 /* PageState.swift in Sources */,
 				B8BF165129587BE400174616 /* HomeViewModel.swift in Sources */,
 				B8BF16312956752B00174616 /* MainTabCoordinator.swift in Sources */,

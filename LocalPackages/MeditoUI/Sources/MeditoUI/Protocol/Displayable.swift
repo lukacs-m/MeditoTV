@@ -35,3 +35,9 @@ public extension Displayable {
         return primaryColor
     }
 }
+
+public protocol Describable {
+    var description: String? { get }
+}
+
+public typealias EnhancedDisplayable = Displayable & Describable

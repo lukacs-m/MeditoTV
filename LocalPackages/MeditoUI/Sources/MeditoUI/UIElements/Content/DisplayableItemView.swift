@@ -10,7 +10,7 @@ import NukeUI
 import SwiftUI
 
 public struct DisplayableItemView: View {
-    let element: Displayable
+    private let element: Displayable
 
     public init(element: Displayable) {
         self.element = element
@@ -28,7 +28,7 @@ public struct DisplayableItemView: View {
                     Spacer()
                     Text(element.title ?? "")
                         .font(.subheadline)
-                        .lineLimit(1)
+                        .lineLimit(2)
                         .foregroundStyle(.primary)
 
                     if let subtitle = element.subtitle {

@@ -7,15 +7,18 @@
 //
 //
 
+import Factory
 import MeditoUI
 import SwiftUI
 
 struct MindfullPacksView: View {
     @StateObject private var viewModel = MindfullPacksViewModel()
+    @Injected(CoordinatorContainer.mainNavigationFlowCoordinator) private var coordinator
 
     private let columns = [
         GridItem(.adaptive(minimum: 420))
     ]
+
     var body: some View {
         mainContainer
             .overlay(overlayView)
@@ -43,7 +46,7 @@ extension MindfullPacksView {
                 if let content = viewModel.pageState.value {
                     ForEach(content.packs) { packs in
                         NavigationLink {
-                            EmptyView()
+                            LazyView(coordinator.goToPage(for: packs))
                         } label: {
                             DisplayableItemView(element: packs)
                                 .frame(width: 420, height: 380)

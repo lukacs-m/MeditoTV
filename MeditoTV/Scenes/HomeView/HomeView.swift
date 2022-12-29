@@ -7,6 +7,7 @@
 //
 //
 
+import Factory
 import MeditoAPI
 import MeditoUI
 import NukeUI
@@ -14,6 +15,7 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
+    @Injected(CoordinatorContainer.mainNavigationFlowCoordinator) private var coordinator
 
     var body: some View {
         mainContainer
@@ -76,7 +78,7 @@ extension HomeView {
     func shortcutSectionCarrousel(for shortcuts: [Shortcut]) -> some View {
         ForEach(shortcuts) { shortcut in
             NavigationLink {
-                EmptyView()
+                LazyView(coordinator.goToPage(for: shortcut))
             } label: {
                 DisplayableItemView(element: shortcut)
                     .frame(width: 380, height: 250)
@@ -89,7 +91,7 @@ extension HomeView {
     func coursesSectionCarrousel(for courses: [Course]) -> some View {
         ForEach(courses) { course in
             NavigationLink {
-                EmptyView()
+                LazyView(coordinator.goToPage(for: course))
             } label: {
                 DisplayableItemView(element: course)
                     .frame(width: 420, height: 320)
